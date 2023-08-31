@@ -11,10 +11,10 @@ if (!process.env.PUSHER_APP_CLUSTER)
   throw Error("PUSHER_APP_CLUSTER IS MISSING!")
 
 export const pusherServer = new PusherServer({
-  // appId: "1662010", // process.env.PUSHER_APP_ID!,
-  // key: "219244c47391d12fe28c", // process.env.NEXT_PUBLIC_PUSHER_APP_KEY!,
-  // secret: "806be4329afb41a0cfe2", // process.env.PUSHER_APP_SECRET!,
-  // cluster: "eu", // process.env.PUSHER_APP_CLUSTER,
+  // appId: "1662010",
+  // key: "219244c47391d12fe28c",
+  // secret: "806be4329afb41a0cfe2",
+  // cluster: "eu",
 
   appId: process.env.PUSHER_APP_ID,
   key: process.env.NEXT_PUBLIC_PUSHER_APP_KEY,
